@@ -20,9 +20,8 @@ func main() {
 	// Returns a boolean based on whether there's a next instance of `\n`
 	// character in the IO stream. This step also advances the internal pointer
 	// to the next position (after '\n') if it did find that token.
-	read := scanner.Scan()
-
-	if read {
+	
+	if scanner.Scan() {
 		fmt.Println("read byte array: ", scanner.Bytes())
 		fmt.Println("read string: ", scanner.Text())
 	}
